@@ -1,0 +1,54 @@
+/*Vars*/
+:root {
+    --couleurtheme: #2f529d;
+}
+
+body{
+    margin: 0;
+}
+
+/*Navigation*/
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--couleurtheme);
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+}
+nav a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+/*Sections*/
+section {
+    height: 500px;
+    padding-top: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+p{
+    text-align: justify;
+}
+
+#intro h1 {
+    text-align: center;
+    font-size: 4em;
+}
+
+#formation, #experience{
+    background-color: var(--couleurtheme);
+    color: white;
+}
