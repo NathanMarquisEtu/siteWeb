@@ -1,6 +1,7 @@
 /*Vars*/
 :root {
-    --couleurtheme: #2f529d;
+    --couleurtheme: #d2dffc;
+    --couleurnav: #3a465f;
 }
 
 body{
@@ -17,14 +18,18 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--couleurtheme);
+    background-color: var(--couleurnav);
 }
 nav a {
     color: white;
     font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, serif;
+    width: auto;
     text-decoration: none;
-    padding: 5px;
+    padding: 10px;
     margin: 5px;
+
 }
 nav a:hover {
     background-color: white;
@@ -45,39 +50,66 @@ p{
 }
 
 #intro{
-    background-image: url("../res/backgroundTitre.png");
+    background-image: url("../res/backgroundTitre.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size: cover;
-    color: white;
-    width: 100%;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-#intro #div_text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#intro *{
+    background-color: rgba(0,0,0,0.5);
 }
-#intro img{
+#intro div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#intro hr{
+    width: 100%;
+}
+#intro>div>img{
     max-width: 200px;
     max-height: 200px;
     border-radius: 100px;
+    background-color: white;
+    padding: 4px;
+}
+#intro button{
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: black;
+    background-color: lightgray;
+    cursor: pointer;
+}
+#intro button:hover{
+    background-color: white;
+}
+#intro button img{
+    max-height: 40px;
+    max-width: 40px;
 }
 #intro h1 {
     text-align: center;
     font-size: 4em;
 }
 #intro p{
-    width: 80%;
+    width: 90%;
+    font-size: 18px;
     max-width: 800px;
 }
 
 #formation, #experience{
     background-color: var(--couleurtheme);
-    color: white;
-    width: 100%;
+    color: black;
+    height: 550px;
 }
 @media only screen and (max-width: 600px){
     #intro img{
