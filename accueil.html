@@ -10,33 +10,49 @@
     <header>
     <nav>
         <a href="#intro">Accueil</a>
+        <hr>
+        <a href="#a_propos">A propos</a>
+        <hr>
         <a href="#formation">Formation</a>
+        <hr>
         <a href="#projets">Projets</a>
+        <hr>
         <a href="#experience">Expérience</a>
+        <hr>
         <a href="#contact">Contact</a>
     </nav>
     </header>
     <section id = "intro">
         <div>
-            <img src="res/photoNathan.jpg" alt="Photo Nathan Marquis">
-            <button><img src="res/telechargement.png" alt="#"> Télécharger mon CV </button>
+        <div id="intro_sous_div_img">
+            <img id="img_moi" src="res/photoNathan.jpg" alt="Photo Nathan Marquis">
+            <div class="bouton">
+                <a id="button" href="res/cv.pdf" download="CV Nathan Marquis"><img src="res/telechargement.png" alt="#"> Télécharger mon CV </a>
+            </div>
         </div>
-        <div>
+        <div id="intro_sous_div_txt">
             <h1> Nathan Marquis </h1>
             <hr>
             <div id = "div_text">
                 <p>
-                    Bienvenue ! Qui suis-je, moi, Nathan Marquis ? Actuellement en deuxième année de BUT informatique,
-                    spécialisé en développement, je suis à la recherche d’un stage de 8 à 10 semaines à partir du 1er avril 2025
-                    en tant que développeur Full-Stack ou Backend en Java. Au cours de ma formation, j’ai acquis une solide
-                    expérience dans la programmation orientée objet, notamment en réalisant un rogue-like avec la méthode agile.
-                    En outre, ce projet m'a permis de développer des qualités essentielles telles que l’écoute active et
-                    la collaboration efficace. Pour en savoir plus sur mes compétences et mes réalisations,
-                    je vous invite à explorer ce site. N’hésitez pas à me contacter pour toute information complémentaire.
-                    Je suis disponible et enthousiaste à l’idée d’échanger autour de futurs projets !
+                    Bienvenue ! Qui suis-je ? Venez le découvrir !
                 </p>
             </div>
-        </div>        
+        </div>
+        </div>
+    </section>
+    <section id="a_propos">
+        <h1>A propos</h1>
+        <p>
+            Actuellement en deuxième année de BUT informatique,
+            spécialisé en développement, je suis à la recherche d’un stage de 8 à 10 semaines à partir du 1er avril 2025
+            en tant que développeur Full-Stack ou Backend en Java. Au cours de ma formation, j’ai acquis une solide
+            expérience dans la programmation orientée objet, notamment en réalisant un rogue-like avec la méthode agile.
+            En outre, ce projet m'a permis de développer des qualités essentielles telles que l’écoute active et
+            la collaboration efficace. Pour en savoir plus sur mes compétences et mes réalisations,
+            je vous invite à explorer ce site. N’hésitez pas à me contacter pour toute information complémentaire.
+            Je suis disponible et enthousiaste à l’idée d’échanger autour de futurs projets !
+        </p>
     </section>
     <section id="formation">
         <h1>Formation</h1>
@@ -52,7 +68,7 @@
             </p>
         </div>
         <div>
-            <h3 class="nomFormation">Baccalauréat technologique STI2D - spécialisation SIN - mention TB</h3>
+            <h3 class="nomFormation">Baccalauréat technologique STI2D en spécialisation SIN : mention TB</h3>
             <p>
                 Le Baccalauréat technologique STI2D (sciences et technologies de l'industrie
                 et du développement durable) est construit autour de l'innovation technologique, des sciences et de l'information.
@@ -62,16 +78,19 @@
         </div>
     </section>
     <section id="projets">
+        <h1>Mes Projets</h1>
         <p>
             projets
         </p>
     </section>
     <section id="experience">
+        <h1>Mon expérience</h1>
         <p>
             expériences
         </p>
     </section>
     <section id="contact">
+        <h1>Contactez moi !</h1>
         <p>
             contact
         </p>
