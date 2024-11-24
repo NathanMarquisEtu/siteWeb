@@ -25,10 +25,11 @@ nav a {
     color: white;
     font-size: 18px;
     font-weight: bold;
-    width: auto;
+    width: 15%;
     text-decoration: none;
     padding: 10px;
     margin: 5px;
+    text-align: center;
 
 }
 nav a:hover {
@@ -42,6 +43,7 @@ nav hr {
     height: 30px;
     padding: 0;
     margin: 0;
+    background-color: white;
 }
 /*Sections*/
 section {
@@ -144,7 +146,7 @@ p{
     color: black;
     height: 550px;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 720px){
     #intro img{
         display: none;
     }
