@@ -1,7 +1,7 @@
 /*Vars*/
 :root {
-    --couleurtheme: #d2dffc;
-    --couleurnav: #3a465f;
+    --couleurtheme: #E9F1FA;
+    --couleurnav: #213F99;
 }
 
 body{
@@ -70,11 +70,14 @@ p{
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
+    height : 65svh;
+    min-height: 450px;
     color: white;
 }
 #intro>div{
     width: 100%;
     min-height: 450px;
+    height: 65svh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -84,12 +87,13 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 #intro_sous_div_img{
     width: 30%;
     margin-top: 35px;
     margin-bottom: 20px;
+    height: 100%;
 }
 #intro_sous_div_txt{
     width: 60%;
@@ -140,14 +144,16 @@ p{
     text-align: center;
 }
 
-
+#a_propos{
+    height: 30svh;
+}
 #formation, #experience{
     background-color: var(--couleurtheme);
     color: black;
     height: 550px;
 }
 @media only screen and (max-width: 720px){
-    #intro img{
+    #intro #img_moi{
         display: none;
     }
     #intro h1{
