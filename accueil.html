@@ -22,59 +22,69 @@
         <a href="#contact">Contact</a>
     </nav>
     </header>
-    <section id = "intro">
-        <div>
-        <div id="intro_sous_div_img">
-            <img id="img_moi" src="res/photoNathan.jpg" alt="Photo Nathan Marquis">
-            <div class="bouton">
-                <a id="button" href="res/cv.pdf" download="CV Nathan Marquis"><img src="res/telechargement.png" alt="#"> Télécharger mon CV </a>
-            </div>
-        </div>
-        <div id="intro_sous_div_txt">
-            <h1> Nathan Marquis </h1>
-            <hr>
-            <div id = "div_text">
-                <p>
-                    Bienvenue ! Qui suis-je ? Venez le découvrir !
-                </p>
-            </div>
-        </div>
+    <section id="intro">
+        <div id="conteneur_intro">
+                <h1> Nathan Marquis </h1>
+                <hr>
+                <div id="intro_sous_div_txt">
+                    <p class = "text">
+                        Bienvenue ! Qui suis-je ? Venez le découvrir !
+                    </p>
+                </div>
+                <div class="div_bouton">
+                    <a id="intro_button" href="res/cv.pdf" download="CV Nathan Marquis"><img src="res/telechargement.png" alt="#"> Télécharger mon CV </a>
+                </div>
         </div>
     </section>
     <section id="a_propos">
         <h1>A propos</h1>
-        <p>
-            Actuellement en deuxième année de BUT informatique,
-            spécialisé en développement, je suis à la recherche d’un stage de 8 à 10 semaines à partir du 1er avril 2025
-            en tant que développeur Full-Stack ou Backend en Java. Au cours de ma formation, j’ai acquis une solide
-            expérience dans la programmation orientée objet, notamment en réalisant un rogue-like avec la méthode agile.
-            En outre, ce projet m'a permis de développer des qualités essentielles telles que l’écoute active et
-            la collaboration efficace. Pour en savoir plus sur mes compétences et mes réalisations,
-            je vous invite à explorer ce site. N’hésitez pas à me contacter pour toute information complémentaire.
-            Je suis disponible et enthousiaste à l’idée d’échanger autour de futurs projets !
-        </p>
+        <div>
+            <img id="img_moi" src="res/photoNathan.jpg" alt="Photo Nathan Marquis">
+            <p class = "text">
+                Actuellement en deuxième année de BUT informatique,
+                spécialisé en développement, je suis à la recherche d’un stage de 8 à 10 semaines à partir du 1er avril 2025
+                en tant que développeur Full-Stack ou Backend en Java. Au cours de ma formation, j’ai acquis une solide
+                expérience dans la programmation orientée objet, notamment en réalisant un rogue-like avec la méthode agile.
+                En outre, ce projet m'a permis de développer des qualités essentielles telles que l’écoute active et
+                la collaboration efficace. Pour en savoir plus sur mes compétences et mes réalisations,
+                je vous invite à explorer ce site. N’hésitez pas à me contacter pour toute information complémentaire.
+                Je suis disponible et enthousiaste à l’idée d’échanger autour de futurs projets !
+            </p>
+        </div>
     </section>
     <section id="formation">
         <h1>Formation</h1>
-        <div>
-            <h4 class="nomFormation">BUT Informatique - Parcours A : réalisation d'applications : conception,
-                développement, validation</h4>
-            <p>
-                Le BUT Informatique, principalement axé sur la professionnalisation, permet d'apprendre
-                les compétences techniques et méthodologiques utiles et nécessaires à un développeur.
-                Au cours de cette formation, j'ai appris à maîtriser Java, les bases de données,
-                le web statique et dynamique, les méthodes de versioning. Le travail d'équipe et la communication
-                sont aussi des points importants de la formation.
-            </p>
-        </div>
-        <div>
-            <h3 class="nomFormation">Baccalauréat technologique STI2D en spécialisation SIN : mention TB</h3>
-            <p>
-                Le Baccalauréat technologique STI2D (sciences et technologies de l'industrie
-                et du développement durable) est construit autour de l'innovation technologique, des sciences et de l'information.
-                La spécialisation SIN apporte les compétences nécessaires pour développer des solutions intégrées et mesurer
-                leurs performances environnementales.
-            </p>
+        <div id="conteneur_formation">
+            <a class="div_formation" href="https://www.univ-lille.fr/formations/fr-00082372">
+                <h4 class="nom_formation">BUT Informatique - Parcours A : réalisation d'applications : conception,
+                    développement, validation</h4>
+                <h5 class ="lieu_formation">
+                    <img class="img_formation" src="res/logo_iut_lille_coupe.png" alt="logo_iut">
+                    <em>IUT de Lille - Villeneuve-d'Ascq</em>
+                </h5>
+
+                <p>
+                    Le BUT Informatique, principalement axé sur la professionnalisation, permet d'apprendre
+                    les compétences techniques et méthodologiques utiles et nécessaires à un développeur.
+                    Au cours de cette formation, j'ai appris à maîtriser Java, les bases de données,
+                    le web statique et dynamique, les méthodes de versioning. Le travail d'équipe et la communication
+                    sont aussi des points importants de la formation.
+                </p>
+            </a>
+            <a class="div_formation" href="https://www.lycee-elisalemonnier.fr/site/nos-formations/">
+                <h4 class="nom_formation">Baccalauréat technologique STI2D en spécialisation SIN : mention TB</h4>
+                <h5 class ="lieu_formation">
+                    <img class="img_formation" src="res/logo_Elisa_Lemonnier.png" alt="logo_lycee">
+                    <em>Lycée Elisa Lemonnier - Douai</em>
+                </h5>
+                <p>
+                    Le Baccalauréat technologique STI2D (sciences et technologies de l'industrie
+                    et du développement durable) est construit autour de l'innovation technologique, des sciences et de l'information.
+                    La spécialisation SIN apporte les compétences nécessaires pour développer des solutions intégrées et mesurer
+                    leurs performances environnementales. L'aisance à l'oral est aussi une compétence qui est travaillée,
+                    au travers de revues de projet.
+                </p>
+            </a>
         </div>
     </section>
     <section id="projets">
