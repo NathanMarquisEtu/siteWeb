@@ -9,191 +9,209 @@
 </head>
 <body>
 <header>
-    <nav class="navbar justify-content-center">
-        <a class="nav-item" href="#intro">Accueil</a>
-        <a class="nav-item" href="#a_propos">A propos</a>
-        <a class="nav-item" href="#formation">Formation</a>
-        <a class="nav-item" href="#projets">Projets</a>
-        <a class="nav-item" href="#competences">Compétences</a>
-        <a class="nav-item" href="#contact">Contact</a>
+    <nav id="navbar" class="navbar nav-pills justify-content-center">
+            <a class="nav-item" href="#intro">Accueil</a>
+            <a class="nav-item" href="#a_propos">A propos</a>
+            <a class="nav-item" href="#formation">Formation</a>
+            <a class="nav-item" href="#projets">Projets</a>
+            <a class="nav-item" href="#competences">Compétences</a>
+            <a class="nav-item" href="#contact">Contact</a>
     </nav>
 </header>
-<section id="intro">
-    <div id="conteneur_intro">
-        <h1> Nathan Marquis </h1>
-        <hr>
-        <div id="intro_sous_div_txt">
-            <p class="text">
-                Bienvenue ! Qui suis-je ? Venez le découvrir !
+<div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -50px" data-bs-smooth-scroll="true" tabindex="0">
+    <section id="intro">
+        <div id="conteneur_intro">
+            <h1> Nathan Marquis </h1>
+            <hr>
+            <div id="intro_sous_div_txt">
+                <p class="text">
+                    Bienvenue ! Qui suis-je ? Venez le découvrir !
+                </p>
+            </div>
+            <div class="div_bouton">
+                <a id="intro_button" href="res/cv.pdf" download="CV Nathan Marquis"><img src="res/telechargement.png"
+                                                                                         alt="#"> Télécharger mon CV </a>
+            </div>
+        </div>
+    </section>
+    <section id="a_propos">
+        <h1>A propos</h1>
+        <div id="conteneur_a_propos">
+            <img class="img-thumbnail" id="img_moi" src="res/photoNathan.jpg" alt="Photo Nathan Marquis">
+            <p class="text text-size-60per">
+                Actuellement en deuxième année de BUT informatique,
+                spécialisé en développement, je suis à la recherche d’un stage de 8 à 10 semaines à partir du 1er avril 2025
+                en tant que développeur Full-Stack ou Backend en Java. Au cours de ma formation, j’ai acquis une solide
+                expérience dans la programmation orientée objet, notamment en réalisant un rogue-like avec la méthode agile.
+                En outre, ce projet m'a permis de développer des qualités essentielles telles que l’écoute active et
+                la collaboration efficace. Pour en savoir plus sur mes compétences et mes réalisations,
+                je vous invite à explorer ce site. N’hésitez pas à me contacter pour toute information complémentaire.
+                Je suis disponible et enthousiaste à l’idée d’échanger autour de futurs projets !
             </p>
         </div>
-        <div class="div_bouton">
-            <a id="intro_button" href="res/cv.pdf" download="CV Nathan Marquis"><img src="res/telechargement.png"
-                                                                                     alt="#"> Télécharger mon CV </a>
-        </div>
-    </div>
-</section>
-<section id="a_propos">
-    <h1>A propos</h1>
-    <div id="conteneur_a_propos">
-        <img class="img-thumbnail" id="img_moi" src="res/photoNathan.jpg" alt="Photo Nathan Marquis">
-        <p class="text text-size-60per">
-            Actuellement en deuxième année de BUT informatique,
-            spécialisé en développement, je suis à la recherche d’un stage de 8 à 10 semaines à partir du 1er avril 2025
-            en tant que développeur Full-Stack ou Backend en Java. Au cours de ma formation, j’ai acquis une solide
-            expérience dans la programmation orientée objet, notamment en réalisant un rogue-like avec la méthode agile.
-            En outre, ce projet m'a permis de développer des qualités essentielles telles que l’écoute active et
-            la collaboration efficace. Pour en savoir plus sur mes compétences et mes réalisations,
-            je vous invite à explorer ce site. N’hésitez pas à me contacter pour toute information complémentaire.
-            Je suis disponible et enthousiaste à l’idée d’échanger autour de futurs projets !
-        </p>
-    </div>
-</section>
-<section id="formation">
-    <h1>Ma Formation</h1>
-    <div class="container-fluid text-center" id="conteneur_formation">
-        <div class="row frise">
-            <div class="col frise-date border-div">Maintenant</div>
-            <hr class="col frise-trait">
-            <div class="col frise-date border-div">Septembre 2023</div>
-            <hr class="col frise-trait">
-            <div class="col frise-date border-div">Septembre 2020</div>
-        </div>
-        <div class="row">
-            <a class="div_formation container-sm col" href="https://www.univ-lille.fr/formations/fr-00082372">
-                <h4 class="nom_formation">BUT Informatique - Parcours A : réalisation d'applications</h4>
-                <h5 class="lieu_formation">
-                    <img class="img_formation img-thumbnail" src="res/logo_iut_lille_coupe.png" alt="logo_iut">
-                    <em>IUT de Lille - Villeneuve-d'Ascq</em>
-                </h5>
-                <p>
-                    Le BUT Informatique parcours A, réalisation d'applications : conception,
-                    développement, validation, est principalement axé sur la professionnalisation et il permet
-                    d'apprendre
-                    les compétences techniques et méthodologiques utiles et nécessaires à un développeur.
-                </p>
-            </a>
-            <a class="div_formation container-sm col" href="https://www.lycee-elisalemonnier.fr/site/nos-formations/">
-                <h4 class="nom_formation">Baccalauréat technologique STI2D en spécialisation SIN : mention TB</h4>
-                <h5 class="lieu_formation">
-                    <img class="img_formation img-thumbnail" src="res/logo_Elisa_Lemonnier.png" alt="logo_lycee">
-                    <em>Lycée Elisa Lemonnier - Douai</em>
-                </h5>
-                <p>
-                    Le Baccalauréat technologique STI2D (sciences et technologies de l'industrie
-                    et du développement durable) est construit autour de l'innovation technologique, des sciences et de
-                    l'information.
-                    La spécialisation SIN apporte les compétences nécessaires pour développer des solutions intégrées et
-                    mesurer
-                    leurs performances environnementales.
-                </p>
-            </a>
-        </div>
+    </section>
+    <section id="formation">
+        <h1>Ma Formation</h1>
+        <div class="container-fluid text-center" id="conteneur_formation">
+            <div class="row frise">
+                <div class="col frise-date border-div">Maintenant</div>
+                <hr class="col frise-trait">
+                <div class="col frise-date border-div">Septembre 2023</div>
+                <hr class="col frise-trait">
+                <div class="col frise-date border-div">Septembre 2020</div>
+            </div>
+            <div class="row">
+                <a class="div_formation container-sm col" href="https://www.univ-lille.fr/formations/fr-00082372">
+                    <h4 class="nom_formation">BUT Informatique - Parcours A : réalisation d'applications</h4>
+                    <h5 class="lieu_formation">
+                        <img class="img_formation img-thumbnail" src="res/logo_iut_lille_coupe.png" alt="logo_iut">
+                        <em>IUT de Lille - Villeneuve-d'Ascq</em>
+                    </h5>
+                    <p>
+                        Le BUT Informatique parcours A, réalisation d'applications : conception,
+                        développement, validation, est principalement axé sur la professionnalisation et il permet
+                        d'apprendre
+                        les compétences techniques et méthodologiques utiles et nécessaires à un développeur.
+                    </p>
+                </a>
+                <a class="div_formation container-sm col" href="https://www.lycee-elisalemonnier.fr/site/nos-formations/">
+                    <h4 class="nom_formation">Baccalauréat technologique STI2D en spécialisation SIN : mention TB</h4>
+                    <h5 class="lieu_formation">
+                        <img class="img_formation img-thumbnail" src="res/logo_Elisa_Lemonnier.png" alt="logo_lycee">
+                        <em>Lycée Elisa Lemonnier - Douai</em>
+                    </h5>
+                    <p>
+                        Le Baccalauréat technologique STI2D (sciences et technologies de l'industrie
+                        et du développement durable) est construit autour de l'innovation technologique, des sciences et de
+                        l'information.
+                        La spécialisation SIN apporte les compétences nécessaires pour développer des solutions intégrées et
+                        mesurer
+                        leurs performances environnementales.
+                    </p>
+                </a>
+            </div>
 
-    </div>
-</section>
-<section id="projets">
-    <h1>Mes Projets</h1>
-    <p>
-        projets
-    </p>
-</section>
-<section id="experience">
-    <h1>Mon expérience</h1>
-    <p>
-        Rien ici pour l'instant
-    </p>
-</section>
-<section class="text-center" id="competences">
-    <h1>Mes Compétences</h1>
-    <div class="row">
-        <div class="card element_competence col">
-            <img src="res/competences/logo_Java.svg" class="card-img-top" alt="Langage Objet (Java)">
-            <div class="card-body">
-                <h5 class="card-title card-header">Langage Objet (Java)</h5>
+        </div>
+    </section>
+    <section id="projets">
+        <h1>Mes Projets</h1>
+        <div class="scroll-conteneur">
+            <div class="card element-projets scroll-item">
+                <img src="res/projets/img_1.05.png" class="card-img-top card-img-top-projets" alt="...">
+                <div class="card-body card-body-projets">
+                    <h5 class="card-title">SAE 1.05 - 1.06 : Ubivoit</h5>
+                    <p class="card-text">
+                        Ce projet est un site Web créé pour une entreprise afin de réduire les coûts
+                        et l'empreinte carbone des déplacements des employés.
+                    </p>
+                    <a href="#" class="btn btn-primary">En savoir plus</a>
+                </div>
             </div>
         </div>
-        <div class="card element_competence col">
-            <img src="res/contact/logo_GitLab.svg" class="card-img-top" alt="Versionning (Git, GitLab)">
-            <div class="card-body">
-                <h5 class="card-title card-header">Versionning (Git, GitLab)</h5>
-            </div>
-        </div>
-        <div class="card element_competence col">
-            <div class="img_html_css">
-                <img src="res/competences/logo_HTML.png" class="card-img-top" alt="Web (HTML, CSS)">
-                <img src="res/competences/logo_CSS.png" class="card-img-top" alt="Web (HTML, CSS)">
-            </div>
-            <div class="card-body">
-                <h5 class="card-title card-header">Web (HTML, CSS)</h5>
-            </div>
-        </div>
-        <div class="card element_competence col">
-            <img src="res/competences/logo_JavaFX.png" class="card-img-top" alt="Graphique (JavaFX)">
-            <div class="card-body">
-                <h5 class="card-title card-header">Graphique (JavaFX)</h5>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="card element_competence col">
-            <img src="res/competences/logo_SQL.png" class="card-img-top" alt="SQL (Postgresql, H2...)">
-            <div class="card-body">
-                <h5 class="card-title card-header card-header">SQL (Postgresql, H2...)</h5>
-            </div>
-        </div>
-        <div class="card element_competence col">
-            <img src="res/competences/logo_C.svg" class="card-img-top" alt="Bas niveau (C)">
-            <div class="card-body">
-                <h5 class="card-title card-header">Bas niveau (C)</h5>
-            </div>
-        </div>
-        <div class="card element_competence col">
-            <img src="res/competences/logo_Office.png" class="card-img-top" alt="Suite office">
-            <div class="card-body">
-                <h5 class="card-title card-header">Suite office</h5>
-            </div>
-        </div>
-        <div class="card element_competence col">
-            <img src="res/competences/logo_Markdown.png" class="card-img-top" alt="Markdown">
-            <div class="card-body">
-                <h5 class="card-title card-header">Markdown</h5>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="contact">
-    <h1>Contactez moi !</h1>
-    <div class="text-center" id="conteneur_contact">
+    </section>
+    <section id="experience">
+        <h1>Mon expérience</h1>
+        <p>
+            Rien ici pour l'instant
+        </p>
+    </section>
+    <section class="text-center" id="competences">
+        <h1>Mes Compétences</h1>
         <div class="row">
-            <a class="col gird-element" href="www.linkedin.com/in/nathan-marquis-43a516264/">
-                Mon LinkedIn
-                <img class="img_contact" src="res/contact/logo_LinkedIn.png" alt="LinkedIn">
-            </a>
-            <a class="col gird-element" href="mailto:nathan.marquis.etu@univ-lille.fr">
-                M'envoyer un email
-                <img class="img_contact" src="res/contact/envelope-arrow-up.svg" alt="mail">
-            </a>
+            <div class="card element_competence col">
+                <img src="res/competences/logo_Java.svg" class="card-img-top  card-img-top-competences" alt="Langage Objet (Java)">
+                <div class="card-body card-body-competences">
+                    <h5 class="card-title card-header card-header-competences card-header card-header-competences-competences">Langage Objet (Java)</h5>
+                </div>
+            </div>
+            <div class="card element_competence col">
+                <div class="img_html_css">
+                    <img src="res/competences/logo_Git.png" class="card-img-top card-img-top-competences" alt="Git">
+                    <img src="res/competences/logo_GitLab.png" class="card-img-top card-img-top-competences" alt="GitLab)">
+                </div>
+                <div class="card-body card-body-competences">
+                    <h5 class="card-title card-header card-header-competences">Versioning (Git, GitLab)</h5>
+                </div>
+            </div>
+            <div class="card element_competence col">
+                <div class="img_html_css">
+                    <img src="res/competences/logo_HTML.png" class="card-img-top card-img-top-competences" alt="Web (HTML, CSS)">
+                    <img src="res/competences/logo_CSS.png" class="card-img-top card-img-top-competences" alt="Web (HTML, CSS)">
+                </div>
+                <div class="card-body card-body-competences">
+                    <h5 class="card-title card-header card-header-competences">Web (HTML, CSS)</h5>
+                </div>
+            </div>
+            <div class="card element_competence col">
+                <img src="res/competences/logo_JavaFX.png" class="card-img-top card-img-top-competences" alt="Graphique (JavaFX)">
+                <img src="res/competences/logo_Figma.png" class="card-img-top card-img-top-competences" alt="Figma">
+                <div class="card-body card-body-competences">
+                    <h5 class="card-title card-header card-header-competences">Graphique (JavaFX)</h5>
+                </div>
+            </div>
         </div>
         <div class="row">
-            <a class="col gird-element" href="https://gitlab.univ-lille.fr/nathan.marquis.etu">
-                Mon GitLab
-                <img class="img_contact" src="res/contact/logo_GitLab.svg" alt="GitLab">
-            </a>
-            <script> function copyToClipboard(text) {
-                navigator.clipboard.writeText(text).then(function () {
-                    alert('Adresse email copiée dans le presse-papier!');
-                }, function (err) {
-                    alert('Erreur lors de la copie dans le presse-papier :', err);
-                });
-            } </script>
-            <a class="col gird-element" onclick="copyToClipboard('nathan.marquis.etu@univ-lille.fr')">
-                Copier mon email
-                <img class="img_contact" src="res/contact/clipboard-plus.svg" alt="copierMail">
-            </a>
+            <div class="card element_competence col">
+                <img src="res/competences/logo_SQL.png" class="card-img-top card-img-top-competences" alt="SQL">
+                <img src="res/competences/logo_Postgre.png" class="card-img-top card-img-top-competences" alt="PostgreSQL">
+                <div class="card-body card-body-competences">
+                    <h5 class="card-title card-header card-header-competences card-header card-header-competences">SQL (Postgresql, SQLite)</h5>
+                </div>
+            </div>
+            <div class="card element_competence col">
+                <img src="res/competences/logo_C.svg" class="card-img-top card-img-top-competences" alt="Bas niveau (C)">
+                <div class="card-body card-body-competences">
+                    <h5 class="card-title card-header card-header-competences">Bas niveau (C)</h5>
+                </div>
+            </div>
+            <div class="card element_competence col">
+                <img src="res/competences/logo_Office.png" class="card-img-top card-img-top-competences" alt="Suite office">
+                <img src="res/competences/logo_Office_Apps.webp" class="card-img-top card-img-top-competences" alt="Suite office">
+                <div class="card-body card-body-competences">
+                    <h5 class="card-title card-header card-header-competences">Suite office</h5>
+                </div>
+            </div>
+            <div class="card element_competence col">
+                <img src="res/competences/logo_Markdown.png" class="card-img-top card-img-top-competences" alt="Markdown">
+                <div class="card-body card-body-competences">
+                    <h5 class="card-title card-header card-header-competences">Markdown</h5>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+    <section id="contact">
+        <h1>Contactez moi !</h1>
+        <div class="text-center" id="conteneur_contact">
+            <div class="row">
+                <a class="col gird-element" href="www.linkedin.com/in/nathan-marquis-43a516264/">
+                    Mon LinkedIn
+                    <img class="img_contact" src="res/contact/logo_LinkedIn.png" alt="LinkedIn">
+                </a>
+                <a class="col gird-element" href="mailto:nathan.marquis.etu@univ-lille.fr">
+                    M'envoyer un email
+                    <img class="img_contact" src="res/contact/envelope-arrow-up.svg" alt="mail">
+                </a>
+            </div>
+            <div class="row">
+                <a class="col gird-element" href="https://gitlab.univ-lille.fr/nathan.marquis.etu">
+                    Mon GitLab
+                    <img class="img_contact" src="res/contact/logo_GitLab.svg" alt="GitLab">
+                </a>
+                <script> function copyToClipboard(text) {
+                    navigator.clipboard.writeText(text).then(function () {
+                        alert('Adresse email copiée dans le presse-papier!');
+                    }, function (err) {
+                        alert('Erreur lors de la copie dans le presse-papier :', err);
+                    });
+                } </script>
+                <a class="col gird-element" onclick="copyToClipboard('nathan.marquis.etu@univ-lille.fr')">
+                    Copier mon email
+                    <img class="img_contact" src="res/contact/clipboard-plus.svg" alt="copierMail">
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
