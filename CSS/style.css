@@ -21,7 +21,7 @@ nav{
     padding: 2px;
     background-color: var(--couleurnav);
     position: absolute;
-    opacity: 1;
+    z-index: 10;
 }
 nav a {
     color: white;
@@ -124,10 +124,10 @@ hr{
     cursor: pointer;
     border-radius: inherit;
     max-width: 250px;
+    transition: scale 0.3s ease;
 }
 #intro_button:hover {
-    transform: scale(1.03);
-    transition: 0.3s ease-in-out;
+    scale: 1.05;
     background-color: white;
     color: black;
 }
@@ -186,11 +186,10 @@ hr{
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+    transition: 0.3s ease;
 }
 .div_formation:hover{
-    transform : scale(1.03);
-    transition: transform 0.3s ease-in-out;
-    position: relative;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
 }
 .nom_formation{
     text-align: center;
@@ -209,16 +208,26 @@ hr{
 }
 
 /*Projets*/
- .scroll-container {
+.scroll-container {
      display: flex;
      overflow-x: auto;
-     white-space: nowrap;
+     flex-wrap: nowrap;
      padding: 10px;
- }
-.scroll-item {
-    width: 300px;
-    margin-right: 10px;
 }
+.scroll-item {
+    flex: 0 0 auto;
+    width: 300px;
+    margin: 15px;
+}
+.card-body-projets{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.btn{
+    align-self: flex-start;
+}
+
 /*Expérience*/
 #experience{
     display: none;
