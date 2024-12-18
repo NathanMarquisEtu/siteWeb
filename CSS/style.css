@@ -21,15 +21,15 @@ header{
 nav{
     padding: 2px;
     background-color: var(--couleurnav);
+    flex-wrap: nowrap;
 }
 nav a {
-    display: block;
     color: white;
     font-size: 18px;
     font-weight: bold;
-    width: 10%;
+    width: fit-content;
     text-decoration: none;
-    padding: 5px;
+    padding: 5px 15px 5px 15px;
     margin: 2px;
     text-align: center;
 }
