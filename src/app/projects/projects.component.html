@@ -1,0 +1,14 @@
+<section id="projets">
+    <h1>Mes Projets</h1>
+    <div class="scroll-container">
+        <div *ngFor="let project of projects" class="card element-projets scroll-item">
+            <img [src]="project.imageUrl" class="card-img-top card-img-top-projets" [alt]="project.altText">
+            <div class="card-body card-body-projets">
+                <h5 class="card-title">{{ project.title }}</h5>
+                <p class="card-text">{{ project.description }}</p>
+                <a [href]="project.projectUrl" target="_blank" class="btn btn-primary">En savoir plus</a>
+            </div>
+        </div>
+        <!-- Comment for the missing image: If a project card for UniVerseLille renders with a broken image, it's because assets/projets/img_4.01.png is missing. -->
+    </div>
+</section>

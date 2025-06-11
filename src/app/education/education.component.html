@@ -1,0 +1,15 @@
+<section id="formation">
+    <h1>Ma Formation</h1>
+    <div class="container-fluid text-center" id="conteneur_formation">
+        <div class="row">
+            <a *ngFor="let item of educationItems" [href]="item.link" target="_blank" class="div_formation container-sm col">
+                <h4 class="nom_formation">{{ item.dates }} : {{ item.name }}</h4>
+                <h5 class="lieu_formation">
+                    <img class="img_formation img-thumbnail" [src]="item.institutionLogoUrl" [alt]="item.altText">
+                    <em>{{ item.institution }}</em>
+                </h5>
+                <p>{{ item.description }}</p>
+            </a>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,18 @@
+<section id="competences" class="text-center">
+    <h1>Mes Compétences</h1>
+    <div class="row">
+        <div *ngFor="let skill of skills; let i = index" class="col-lg-3 col-md-6 mb-4">
+            <div class="card element_competence h-100"> {/* h-100 for equal height cards in Bootstrap */}
+                <div class="img-container d-flex justify-content-around align-items-center p-2" [ngClass]="skill.imageUrls.length > 1 ? 'img_html_css' : ''">
+                    <img *ngFor="let imageUrl of skill.imageUrls; let imgIndex = index"
+                         [src]="imageUrl"
+                         class="card-img-top card-img-top-competences"
+                         [alt]="skill.altTexts[imgIndex] || skill.name">
+                </div>
+                <div class="card-body card-body-competences">
+                    <h5 class="card-title card-header card-header-competences">{{ skill.name }}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
