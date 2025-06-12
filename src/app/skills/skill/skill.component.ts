@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common'; // Import CommonModule for *ngFor etc.
-import { Skill, SkillService } from './skill.service';
+import {CommonModule, NgOptimizedImage} from '@angular/common'; // Import CommonModule for *ngFor etc.
+import { Skill, SkillService } from '../skill.service';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [CommonModule], // Add CommonModule here
-  templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.scss']
+  imports: [CommonModule, NgOptimizedImage], // Add CommonModule here
+  templateUrl: './skill.component.html',
+  styleUrls: ['./skill.component.scss']
 })
-export class SkillsComponent implements OnInit {
+export class SkillComponent implements OnInit {
   public skills: Skill[] = [];
   // public skillsRow1: Skill[] = []; // Example if we split them for rows
   // public skillsRow2: Skill[] = [];
